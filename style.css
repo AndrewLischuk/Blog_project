@@ -52,8 +52,7 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    /* font-family: 'Quattrocento Sans', sans-serif; */
+    font-family: 'Open Sans', sans-serif;    
 }
 .container {
     width: 1170px;
@@ -82,9 +81,7 @@ body {
     font-size: 14px;
     color: #a4aead;
     text-decoration: none;
-    text-align: center;
-    /* border: 2px solid #a4aead;
-    border-radius: 3px; */
+    text-align: center; 
     display: block;
     line-height: 25px;
     padding: 0 10px;
@@ -95,11 +92,7 @@ body {
     /* border-color: #23b7a4;
     color: #23b7a4; */
 }
-/* .logo {border: 1px dotted white}
-.search {
-    border: 1px dotted white;
-    color: white;
-} */
+
 .main section {
     height: 660px;
     display: flex;
