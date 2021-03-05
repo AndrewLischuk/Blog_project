@@ -1,51 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Project</title>
+    <title>Modest</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,300&family=Quattrocento+Sans:wght@700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700;800&family=Quattrocento+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header class="header">
         <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="logo"><a href=""><img src="./Blog/logo.png" alt="Logo"></a></div>
+            <div class="row align-header">
+                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 logo">
+                    <a href=""><img src=".//Blog/logo.png" alt="Logo"></a>
                 </div>
-                <div class="col-md-6">
-                    <nav>
-                        <div class="menu row sd-content">
-                            <a href="">HOME</a>
-                            <a href="">ABOUT</a>
-                            <a href="">WORK</a>
-                            <a href="">TEAM</a>
-                            <a href="">SERVICES</a>
-                            <a href="">FEATURES</a>
-                            <a href="">CONTACT</a>
-                        </div>
-                    </nav>
+                <div class="col-xs-12 col-sm-12 col-md-7 col-lg-8 col-xl-7 menu">
+                    <a href="#home">HOME</a>
+                    <a href="#about">ABOUT</a>
+                    <a href="#team">TEAM</a>
+                    <a href="#work">WORK</a>
+                    <a href="#services">SERVICES</a>
+                    <a href="#features">FEATURES</a>
+                    <a href="#contact">CONTACT</a>
                 </div>
-                <div class="col-md-3">
-                    <div class="search">search</div>
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-2 col-xl-3 search">
+                    <input type="search" placeholder="SEARCH" name="search">
+                    <a class="btn-search" href=""><img src="./Blog/search.png" alt="search" width="30px"
+                            height="30px"></a>
                 </div>
             </div>
         </div>
     </header>
     <main class="main">
-        <section class="welcome">           
-            <h2 class="container">WELCOME TO OUR MARKETPLACE</h2>
-            <p class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias animi explicabo magnam voluptatem voluptates voluptatum earum nam veniam nihil. Facere cum placeat corrupti similique. Fugiat at velit perspiciatis alias illum?</p>
-            <div class="dev-btn container">
-                <div><button class="btn-more">VIEV MORE</button></div>
-                <div><button class="btn-tour">VIDEO TOUR</button></div>
+        <div class="home-bckgnd">
+            <div class="container">
+                <section class="row align-main-home home">
+                    <a name="home" href=""></a>
+                    <h1 class="col-xs-12 section-title">WELCOME TO OUR MARKETPLACE</h1>
+                    <p class="col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Sed nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu
+                        lacus ...</p>
+                    <div class="dev-btn">
+                        <div class="col-xs-12 col-sm-12"><button class="btn-more">VIEV MORE</button></div>
+                        <div class="col-xs-12 col-sm-12"><button class="btn-tour">VIDEO TOUR</button></div>
+                    </div>
+                </section>
             </div>
-        </section>
+        </div>
+        <div class="white-bckgnd">
+            <div class="container">
+                <section class="row align-main about">
+                    <a name="about" href=""></a>
+                    <h1 class="col-xs-12 section-title section-title-dark">
+                        <div>WE ARE MODEST.</div>
+                    </h1>
+                    <div class="align-about">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-7 col-xl-7">
+                            <p>Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Sed nisi metus, tristique ndolor non, ornare sagittis
+                                dolor.
+                                Nulla vestibulu lacus sed molestie gravida. Crferm entum quismagna congue, vel sodales
+                                arcu
+                                vestibulum. Nunc lobortis dui magna, quis lacusullamcorper at. </p>
+                            <p>Phasellus sollicitudin ante eros
+                                ornare, <span>sit amet luctus lorem semper</span>. Suspendisse posuere, quamdictum
+                                consectetur, augue metus pharetra tellus, eu feugiatloreg egetnisi. Cras ornare bibendum
+                                ante, ut bibendum odio convallis eget. vel sodales arcu vestibulum</p>
+                            <div class="share">
+                                <a class="share-links" href=""><img src="./Blog/facebook.png" alt=""></a>
+                                <a class="share-links" href=""><img src="./Blog/twit.png" alt=""></a>
+                                <a class="share-links" href=""><img src="./Blog/google.png" alt=""></a>
+                                <a class="share-links" href=""><img src="./Blog/world.png" alt=""></a>
+                                <a class="share-links" href=""><img src="./Blog/be_friends.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5 col-xl-5 thesis">
+                            <div class="thesis-block">
+                                <div class="">
+                                    <div class="dev-num">01</div>
+                                </div>
+                                <div class="col-xs-10">
+                                    <div class="thesis-title">DEDICATION TO THE CUSTOMERS</div>
+                                    <div class="thesis-text">Integer vel lacus non dui ullamcorper venenatis. Aliquam
+                                        vitae
+                                        tristique nisi, vitae ullamcorper risus.</div>
+                                </div>
+                            </div>
+
+                            <div class="thesis-block">
+                                <div class="">
+                                    <div class="dev-num">02</div>
+                                </div>
+                                <div class="col-xs-10">
+                                    <div class="thesis-title">WORKING CLOSELY WITH OUR CLIENTS</div>
+                                    <div class="thesis-text">Sed blandit nisi urna, sed pellentesque enim consectetur
+                                        vitae.
+                                        Suspendisse ut vehicula nibh.</div>
+                                </div>
+                            </div>
+
+                            <div class="thesis-block">
+                                <div class="">
+                                    <div class="dev-num">03</div>
+                                </div>
+                                <div class="col-xs-10">
+                                    <div class="thesis-title">INCREASE HAPPINESS</div>
+                                    <div class="thesis-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Nulla
+                                        eleifend laoreet euismod.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="white-bckgnd">
+            <div class="container">
+                <section class="row align-main team">
+                    <a name="team" href=""></a>
+                    <h1 class="col-xs-12 col-sm-12 section-title section-title-dark">
+                        <div>MEET THE TEAM.</div>
+                    </h1>
+                    <div class="align-team">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 align-team-block">
+                            <div class="box-hov"><div class="box">
+                                <img src=".//Blog/portrait1.png" alt="portrait1">
+                                <div class="dev-profile">
+                                    <div class="dev-link"><a href=""><img src="./Blog/twit2.png" alt=""></a></div>
+                                    <div class="dev-link"><a href=""><img src="./Blog/facebook2.png" alt=""></a></div>
+                                    <div class="dev-link"><a href=""><img src="./Blog/in3.png" alt=""></a></div>
+                                </div>
+                                <div class="overlay-box"></div>
+                            </div>
+                            <div class="dev-info">
+                                <div class="dev-name">GLORIA BROMLEY</div>
+                                <div class="dev-position">CEO and Founder</div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 align-team-block">
+                            <div class="box-hov"><div class="box">
+                                <img src=".//Blog/portrait2.png" alt="portrait2">
+                                <div class="dev-profile">
+                                    <div class="dev-link"><a href=""><img src="./Blog/twit2.png" alt=""></a></div>
+                                    <div class="dev-link"><a href=""><img src="./Blog/facebook2.png" alt=""></a></div>
+                                    <div class="dev-link"><a href=""><img src="./Blog/in3.png" alt=""></a></div>
+                                </div>
+                                <div class="overlay-box"></div>
+                            </div>
+                            <div class="dev-info">
+                                <div class="dev-name">PAUL TORRES</div>
+                                <div class="dev-position">Head of Development</div>
+                            </div>                            
+                        </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 align-team-block">
+                            <div class="box-hov"><div class="box">
+                                <img src=".//Blog/portrait3.png" alt="portrait3">
+                                <div class="dev-profile">
+                                    <div class="dev-link"><a href=""><img src="./Blog/twit2.png" alt=""></a></div>
+                                    <div class="dev-link"><a href=""><img src="./Blog/facebook2.png" alt=""></a></div>
+                                    <div class="dev-link"><a href=""><img src="./Blog/in3.png" alt=""></a></div>
+                                </div>
+                                <div class="overlay-box"></div>
+                            </div>
+                            <div class="dev-info">
+                                <div class="dev-name">JUDITH GILLETTE</div>
+                                <div class="dev-position">Graphic Designer</div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 align-team-block">
+                            <div class="box-hov"><div class="box">
+                                <img src=".//Blog/portrait4.png" alt="portrait4">
+                                <div class="dev-profile">
+                                    <div class="dev-link"><a href=""><img src="./Blog/twit2.png" alt=""></a></div>
+                                    <div class="dev-link"><a href=""><img src="./Blog/facebook2.png" alt=""></a></div>
+                                    <div class="dev-link"><a href=""><img src="./Blog/in3.png" alt=""></a></div>
+                                </div>
+                                <div class="overlay-box"></div>
+                            </div>
+                            <div class="dev-info">
+                                <div class="dev-name">DELORES REED</div>
+                                <div class="dev-position">Client Service Director</div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="dark-bckgnd">
+            <div class="container">
+                <section class="row align-main work">
+                    <a name="work" href=""></a>
+                    <h1 class="col-xs-12 col-sm-12 section-title">
+                        <div>LOVELY WORK.</div>
+                    </h1>
+                    <div class="photos">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 photos-img">
+                            <div><img src="./Blog/img-1.png" alt="img-1">
+                                <div class="img-plus"><a href=""><img src="./Blog/plus.png" alt=""></a></div>
+                                <div class="partnership">PARTNERSHIP GUIDLINES</div>
+                                <div class="overlay-photos"></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 photos-img">
+                            <div><img src="./Blog/img-2.png" alt="img-2">
+                                <div class="img-plus"><a href=""><img src="./Blog/plus.png" alt=""></a></div>
+                                <div class="partnership">PARTNERSHIP GUIDLINES</div>
+                                <div class="overlay-photos"></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 photos-img">
+                            <div><img src="./Blog/img-3.png" alt="img-3">
+                                <div class="img-plus"><a href=""><img src="./Blog/plus.png" alt=""></a></div>
+                                <div class="partnership">PARTNERSHIP GUIDLINES</div>
+                                <div class="overlay-photos"></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 photos-img">
+                            <div><img src="./Blog/img-4.png" alt="img-4">
+                                <div class="img-plus"><a href=""><img src="./Blog/plus.png" alt=""></a></div>
+                                <div class="partnership">PARTNERSHIP GUIDLINES</div>
+                                <div class="overlay-photos"></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 photos-img">
+                            <div><img src="./Blog/img-5.png" alt="img-5">
+                                <div class="img-plus"><a href=""><img src="./Blog/plus.png" alt=""></a></div>
+                                <div class="partnership">PARTNERSHIP GUIDLINES</div>
+                                <div class="overlay-photos"></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 photos-img">
+                            <div><img src="./Blog/img-6.png" alt="img-6">
+                                <div class="img-plus"><a href=""><img src="./Blog/plus.png" alt=""></a></div>
+                                <div class="partnership">PARTNERSHIP GUIDLINES</div>
+                                <div class="overlay-photos"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="white-bckgnd">
+            <div class="container">
+                <section class="row align-main services">
+                    <a name="services" href=""></a>
+                    <h1 class="col-xs-12 col-sm-12 section-title section-title-dark">
+                        <div>WHAT WE DO.</div>
+                    </h1>
+                </section>
+            </div>
+        </div>
+        <div class="dark-bckgnd">
+            <div class="container">
+                <section class="row align-main features">
+                    <a name="features" href=""></a>
+                    <h1 class="col-xs-12 col-sm-12 section-title">
+                        <div>FEATURES.</div>
+                    </h1>
+                </section>
+            </div>
+        </div>
+        <div class="white-bckgnd">
+            <div class="container">
+                <section class="row align-main contact">
+                    <a name="contact" href=""></a>
+                    <h1 class="col-xs-12 col-sm-12 section-title section-title-dark">
+                        <div>STAY IN TOUCH.</div>
+                    </h1>
+                </section>
+            </div>
+        </div>
     </main>
-    <footer class="footer">footer</footer>
+    <footer class="footer"></footer>
 </body>
+
 </html>
