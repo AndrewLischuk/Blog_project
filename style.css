@@ -97,6 +97,9 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
+span {
+    font-weight: 600;
+}
 
 /************ HEADER ************/
 
@@ -191,7 +194,8 @@ section {
 .dark-bckgnd {
     background-color: #3a454d;
 }
-.section-title, .thesis-title {
+.section-title, .thesis-title, 
+.service-title, .feat-title, .contact-title {
     font-family: 'Quattrocento Sans';
     font-size: 36px;
     font-weight: bold;
@@ -214,7 +218,9 @@ section {
 }
 /************ HOME ************/
 
-.home p, .about p, .thesis-text, .dev-position {
+.home p, .about p, .thesis-text, 
+.dev-position, .service-description, 
+.feat-description, .contact-description {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -255,11 +261,6 @@ section {
     padding-top: 0;
     padding-bottom: 40px;
 }
-
-.about p span {
-    font-weight: 600;
-}
-
 .share {
     display: flex;
     justify-content: center;
@@ -452,13 +453,134 @@ div.box-hov:hover div.dev-info:hover div {color: #fff;}
     position: absolute;    
     width: 50px;
     height: 50px;
+    border: 2px solid transparent;
+    border-radius: 6px;
     margin-bottom: 60px;        
     z-index: 5;
+    opacity: 30%;
 }
 
 div.photos-img:hover .overlay-photos {display: flex;}
 div.photos-img:hover .partnership {display: flex;}
 div.photos-img:hover .img-plus {display: flex;}
+div.img-plus:hover {
+    border: 2px solid transparent;
+    border-radius: 6px;
+    background-color: rgba(141, 143, 146, 0.5);
+    opacity: 90%;
+}
+
+
+/************ SERVICES ************/
+
+.service-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.service-icon {
+    margin-bottom: 35px;
+}
+.service-title {
+    color: #292f36;
+    font-size: 17px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+.service-description {
+    padding: 0;
+    color: #8d8f92;
+    margin-bottom: 95px;
+    text-align: center;
+}
+
+/************ FEATURES ************/
+
+.features-align {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+    align-items: center;
+}
+.feat-info {    
+    flex-direction: column;
+    justify-content: center;
+}
+.feat-photo {
+    margin-bottom: 55px;    
+}
+.feat-photo img {
+    width: 100%;
+    height: 100%;    
+    max-height: 270px;
+    object-fit: cover;
+}
+.feat-title {
+    color: #fff;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+.feat-description {
+    padding: 0;
+    margin-bottom: 80px;
+    color: #dcdfe1;
+}
+
+
+/************ CONTACT ************/
+
+.dev-map {
+    position: relative;
+}
+.map {
+    position: absolute;
+    top: 165px;
+    left: 0;
+    right: 0;
+}
+.contact-info
+.contact-title {
+    margin-top: 400px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    color: #292f36;
+}
+.contact-description {
+    padding: 0;
+    color: #8d8f92;
+}
+.contact-description p {    
+    margin-bottom: 40px;
+}
+
+/************ FOOTER ************/
+
+.align-footer {    
+    min-height: 95px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer {
+    background-color: #3a454d;   
+}
+.copyright {
+    color: #fff;
+    text-align: center;
+}
+.footer-icon {
+    border: 1px solid transparent;
+    border-radius: 6px;
+}
+div.footer-icon:hover {background-color: #293035;}
 
 /************ TABLET MD ************/
 
@@ -540,6 +662,24 @@ div.photos-img:hover .img-plus {display: flex;}
     .align-team-block {
         justify-content: center;
     }
+    .service-align {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .align-footer {    
+        min-height: 95px;
+        display: flex;        
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer-icons {
+        justify-content: flex-end;
+    }
+    .copyright {
+        text-align: left;
+    }
 }
 
 /************ LAPTOP LG ************/
@@ -605,6 +745,11 @@ div.photos-img:hover .img-plus {display: flex;}
         flex-wrap: wrap;
         justify-content: center;
     }
+    .features-align {
+        flex-direction: column;
+        justify-content: center;    
+        align-items: center;
+    }
 }
 
 /************ DESKTOP XL ************/
@@ -660,5 +805,10 @@ div.photos-img:hover .img-plus {display: flex;}
     .col-xl-12 {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+    .features-align {
+        flex-direction: row;
+        justify-content: center;    
+        align-items: center;
     }
 }
