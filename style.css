@@ -1,56 +1,69 @@
 * {
     box-sizing: border-box;
 }
+
 /************ mobile  XS ************/
 
 @media (max-width: 575px) {
     .container {
         max-width: 100%;
     }
+
     .col-xs-1 {
         flex: 0 0 8.33%;
         max-width: 8.33%;
     }
+
     .col-xs-2 {
         flex: 0 0 16.667;
         max-width: 16.667%;
     }
+
     .col-xs-3 {
         flex: 0 0 25%;
         max-width: 25%;
     }
+
     .col-xs-4 {
         flex: 0 0 33.33%;
         max-width: 33.33%;
     }
+
     .col-xs-5 {
         flex: 0 0 41.667;
         max-width: 41.667%;
     }
+
     .col-xs-6 {
         flex: 0 0 50%;
         max-width: 50%;
     }
+
     .col-xs-7 {
         flex: 0 0 58.33%;
         max-width: 58.33%;
     }
+
     .col-xs-8 {
         flex: 0 0 66.667%;
         max-width: 66.667%;
     }
+
     .col-xs-9 {
         flex: 0 0 75%;
         max-width: 75%;
     }
+
     .col-xs-10 {
         flex: 0 0 83.33%;
         max-width: 83.33%;
     }
+
     .col-xs-11 {
         flex: 0 0 91.667%;
         max-width: 91.667%;
     }
+
     .col-xs-12 {
         flex: 0 0 100%;
         max-width: 100%;
@@ -82,11 +95,13 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .align-main-home {
     display: flex;
     flex-flow: column;
     justify-content: center;
 }
+
 .align-main {
     display: flex;
     flex-flow: column;
@@ -97,6 +112,7 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
+
 span {
     font-weight: 600;
 }
@@ -115,7 +131,7 @@ span {
     padding: 4px 0;
 }
 
-.menu {    
+.menu {
     overflow: auto;
     white-space: nowrap;
 }
@@ -191,36 +207,53 @@ section {
 .white-bckgnd {
     background-color: #fff;
 }
+
 .dark-bckgnd {
     background-color: #3a454d;
 }
-.section-title, .thesis-title, 
-.service-title, .feat-title, .contact-title {
+
+.section-title,
+.thesis-title,
+.service-title,
+.feat-title,
+.contact-title {
     font-family: 'Quattrocento Sans';
     font-size: 36px;
     font-weight: bold;
     color: #fff;
     margin-top: 80px;
-    margin-bottom: 65px;       
+    margin-bottom: 65px;
 }
+
 .section-title div {
     border-left: 10px solid #4e5a62;
-    padding-left: 15px; 
+    padding-left: 15px;
 }
 
 .section-title-dark {
-    color: #292f36;    
+    color: #292f36;
     margin-top: 80px;
 }
+
 .section-title-dark div {
     border-left: 10px solid #e1e6ea;
     padding-left: 15px;
 }
+
 /************ HOME ************/
 
-.home p, .about p, .thesis-text, 
-.dev-position, .service-description, 
-.feat-description, .contact-description {
+.section-title-home {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.home p,
+.about p,
+.thesis-text,
+.dev-position,
+.service-description,
+.feat-description,
+.contact-description {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -235,10 +268,13 @@ section {
     align-items: center;
 }
 
-.btn-more, .btn-tour {
+.btn-more,
+.btn-tour {
     height: 45px;
-    width: 125px;
+    min-width: 155px;
     margin: 10px 0;
+    padding-left: 20px;
+    padding-right: 20px;
     border: 2px solid #fff;
     border-radius: 5px;
     color: #fff;
@@ -248,7 +284,7 @@ section {
     font-weight: bold;
 }
 
-.dev-btn button:hover {
+.dev-btn button:hover, .btn-align button:hover {
     border: 2px solid #23b7a4;
     border-radius: 5px;
     background-color: #23b7a4;
@@ -261,6 +297,7 @@ section {
     padding-top: 0;
     padding-bottom: 40px;
 }
+
 .share {
     display: flex;
     justify-content: center;
@@ -283,11 +320,13 @@ a.share-links {
 .share-links:hover {
     background-color: #d0d5d9;
 }
+
 .thesis-block {
     display: flex;
     justify-content: flex-start;
     padding-bottom: 20px;
 }
+
 .dev-num {
     width: 50px;
     height: 50px;
@@ -300,11 +339,13 @@ a.share-links {
     font-size: 20px;
     font-weight: 700;
 }
+
 .thesis-text {
     color: #8d8f92;
     padding-top: 20px;
     padding-bottom: 15px;
 }
+
 .thesis-title {
     color: #292f36;
     font-size: 18px;
@@ -316,23 +357,26 @@ a.share-links {
 
 .box {
     position: relative;
-    height: auto;    
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .box div {
     justify-self: center;
     align-self: center;
 }
+
 .box img {
     width: 100%;
     height: 100%;
     max-width: 330px;
     max-height: 360px;
-    object-fit: cover;   
+    object-fit: cover;
 }
-.dev-info {    
+
+.dev-info {
     height: 75px;
     padding-left: 20px;
     margin-bottom: 40px;
@@ -342,29 +386,34 @@ a.share-links {
     align-items: flex-start;
     background-color: #e1e6ea;
 }
+
 .dev-name {
     font-family: 'Quattrocento Sans';
     font-size: 16px;
     font-weight: bold;
     color: #292f36;
 }
+
 .dev-position {
     font-size: 14px;
     color: #8d8f92;
     padding: 0;
 }
+
 .align-team {
     display: flex;
     flex-flow: column;
     align-items: center;
 }
+
 .dev-profile {
-    position: absolute;    
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 5;
 }
+
 .dev-link {
     display: none;
     width: 50px;
@@ -373,6 +422,7 @@ a.share-links {
     background-color: #3a454d;
     /* border: 1px solid white; */
 }
+
 .overlay-box {
     display: none;
     position: absolute;
@@ -383,16 +433,34 @@ a.share-links {
     z-index: 4;
     background-color: rgba(255, 255, 255, 0.4);
 }
-div.box-hov:hover div.overlay-box {display: inline-block;}
-div.box-hov:hover .dev-link {display: inline-block;}
 
-div.box-hov:hover div.dev-info {background-color: #3a454d;}
-div.box-hov:hover div.dev-info div {color: #fff;}
+div.box-hov:hover div.overlay-box {
+    display: inline-block;
+}
 
-.dev-profile div:hover {background-color: #4e5a62;}
+div.box-hov:hover .dev-link {
+    display: inline-block;
+}
 
-div.box-hov:hover div.dev-info:hover {background-color: #3a454d;}
-div.box-hov:hover div.dev-info:hover div {color: #fff;}
+div.box-hov:hover div.dev-info {
+    background-color: #3a454d;
+}
+
+div.box-hov:hover div.dev-info div {
+    color: #fff;
+}
+
+.dev-profile div:hover {
+    background-color: #4e5a62;
+}
+
+div.box-hov:hover div.dev-info:hover {
+    background-color: #3a454d;
+}
+
+div.box-hov:hover div.dev-info:hover div {
+    color: #fff;
+}
 
 /************ WORK ************/
 
@@ -402,17 +470,19 @@ div.box-hov:hover div.dev-info:hover div {color: #fff;}
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
     overflow: hidden;
     z-index: 3;
 }
+
 .photos-img img {
     width: 100%;
     height: 100%;
     max-width: 360px;
-    max-height: 265px;    
+    max-height: 265px;
     object-fit: cover;
 }
+
 .photos-img>div {
     position: relative;
     display: flex;
@@ -425,44 +495,62 @@ div.box-hov:hover div.dev-info:hover div {color: #fff;}
     align-items: center;
     background-color: #292f36;
     color: #fff;
-    max-width: 360px;    
+    max-width: 360px;
     height: 60px;
     padding-left: 20px;
     font-family: 'Quattrocento Sans';
     font-size: 18px;
     font-weight: bold;
-    position: absolute;       
+    position: absolute;
     bottom: 0;
-    left: 0;    
+    left: 0;
     right: 0;
     z-index: 5;
 }
+
 .overlay-photos {
     display: none;
     position: absolute;
     max-width: 360px;
-    top: 0;    
+    top: 0;
     bottom: 0;
     left: 0;
-    right: 0;    
+    right: 0;
     z-index: 4;
     background-color: rgba(41, 47, 54, 0.5);
 }
+
 .img-plus {
     display: none;
-    position: absolute;    
+    position: absolute;
     width: 50px;
     height: 50px;
     border: 2px solid transparent;
     border-radius: 6px;
-    margin-bottom: 60px;        
+    margin-bottom: 60px;
     z-index: 5;
     opacity: 30%;
 }
+.btn-align {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
-div.photos-img:hover .overlay-photos {display: flex;}
-div.photos-img:hover .partnership {display: flex;}
-div.photos-img:hover .img-plus {display: flex;}
+div.photos-img:hover .overlay-photos {
+    display: flex;
+}
+
+div.photos-img:hover .partnership {
+    display: flex;
+}
+
+div.photos-img:hover .img-plus {
+    display: flex;
+}
+
 div.img-plus:hover {
     border: 2px solid transparent;
     border-radius: 6px;
@@ -479,15 +567,18 @@ div.img-plus:hover {
     justify-content: center;
     align-items: center;
 }
+
 .service-icon {
     margin-bottom: 35px;
 }
+
 .service-title {
     color: #292f36;
     font-size: 17px;
     margin-top: 0;
     margin-bottom: 25px;
 }
+
 .service-description {
     padding: 0;
     color: #8d8f92;
@@ -500,28 +591,33 @@ div.img-plus:hover {
 .features-align {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;    
+    justify-content: center;
     align-items: center;
 }
-.feat-info {    
+
+.feat-info {
     flex-direction: column;
     justify-content: center;
 }
+
 .feat-photo {
-    margin-bottom: 55px;    
+    margin-bottom: 55px;
 }
+
 .feat-photo img {
     width: 100%;
-    height: 100%;    
+    height: 100%;
     max-height: 270px;
     object-fit: cover;
 }
+
 .feat-title {
     color: #fff;
     font-size: 18px;
     margin-top: 0;
     margin-bottom: 25px;
 }
+
 .feat-description {
     padding: 0;
     margin-bottom: 80px;
@@ -534,53 +630,63 @@ div.img-plus:hover {
 .dev-map {
     position: relative;
 }
+
 .map {
     position: absolute;
     top: 165px;
     left: 0;
     right: 0;
 }
-.contact-info
-.contact-title {
+
+.contact-info .contact-title {
     margin-top: 400px;
     margin-bottom: 40px;
     font-size: 20px;
     color: #292f36;
 }
+
 .contact-description {
     padding: 0;
     color: #8d8f92;
 }
-.contact-description p {    
+
+.contact-description p {
     margin-bottom: 40px;
 }
 
-/************ FOOTER ************/
+/************************ FOOTER ************************/
 
-.align-footer {    
+.align-footer {
     min-height: 95px;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
 }
+
 .footer-icons {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+
 .footer {
-    background-color: #3a454d;   
+    background-color: #3a454d;
 }
+
 .copyright {
     color: #fff;
     text-align: center;
 }
+
 .footer-icon {
     border: 1px solid transparent;
     border-radius: 6px;
 }
-div.footer-icon:hover {background-color: #293035;}
+
+div.footer-icon:hover {
+    background-color: #293035;
+}
 
 /************ TABLET MD ************/
 
@@ -588,95 +694,116 @@ div.footer-icon:hover {background-color: #293035;}
     .container {
         max-width: 720px;
     }
+
     .col-md-1 {
         flex: 0 0 8.33%;
         max-width: 8.33%;
     }
+
     .col-md-2 {
         flex: 0 0 16.667;
         max-width: 16.667%;
     }
+
     .col-md-3 {
         flex: 0 0 25%;
         max-width: 25%;
     }
+
     .col-md-4 {
         flex: 0 0 33.33%;
         max-width: 33.33%;
     }
+
     .col-md-5 {
         flex: 0 0 41.667;
         max-width: 41.667%;
     }
+
     .col-md-6 {
         flex: 0 0 50%;
         max-width: 50%;
     }
+
     .col-md-7 {
         flex: 0 0 58.33%;
         max-width: 58.33%;
     }
+
     .col-md-8 {
         flex: 0 0 66.667%;
         max-width: 66.667%;
     }
+
     .col-md-9 {
         flex: 0 0 75%;
         max-width: 75%;
     }
+
     .col-md-10 {
         flex: 0 0 83.33%;
         max-width: 83.33%;
     }
+
     .col-md-11 {
         flex: 0 0 91.667%;
         max-width: 91.667%;
     }
+
     .col-md-12 {
         flex: 0 0 100%;
         max-width: 100%;
     }
+
     .search {
         display: flex;
     }
+
     .dev-btn {
         display: flex;
         flex-flow: row;
         justify-content: flex-start;
         align-items: center;
     }
-    
+
     .align-about {
         display: flex;
         flex-flow: row;
         justify-content: flex-start;
     }
+
     .share {
         justify-content: flex-start;
     }
+
     .align-team {
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;        
+        justify-content: center;
     }
+
     .align-team-block {
         justify-content: center;
     }
+
     .service-align {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
     }
-    .align-footer {    
+
+    .align-footer {
         min-height: 95px;
-        display: flex;        
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
+
     .footer-icons {
         justify-content: flex-end;
     }
+
     .copyright {
         text-align: left;
     }
@@ -688,66 +815,81 @@ div.footer-icon:hover {background-color: #293035;}
     .container {
         max-width: 960px;
     }
+
     .col-lg-1 {
         flex: 0 0 8.33%;
         max-width: 8.33%;
     }
+
     .col-lg-2 {
         flex: 0 0 16.667;
         max-width: 16.667%;
     }
+
     .col-lg-3 {
         flex: 0 0 25%;
         max-width: 25%;
     }
+
     .col-lg-4 {
         flex: 0 0 33.33%;
         max-width: 33.33%;
     }
+
     .col-lg-5 {
         flex: 0 0 41.667;
         max-width: 41.667%;
     }
+
     .col-lg-6 {
         flex: 0 0 50%;
         max-width: 50%;
     }
+
     .col-lg-7 {
         flex: 0 0 58.33%;
         max-width: 58.33%;
     }
+
     .col-lg-8 {
         flex: 0 0 66.667%;
         max-width: 66.667%;
     }
+
     .col-lg-9 {
         flex: 0 0 75%;
         max-width: 75%;
     }
+
     .col-lg-10 {
         flex: 0 0 83.33%;
         max-width: 83.33%;
     }
+
     .col-lg-11 {
         flex: 0 0 91.667%;
         max-width: 91.667%;
     }
+
     .col-lg-12 {
         flex: 0 0 100%;
         max-width: 100%;
     }
+
     .menu {
         display: flex;
         justify-content: center;
     }
+
     .photos {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .features-align {
         flex-direction: column;
-        justify-content: center;    
+        justify-content: center;
         align-items: center;
     }
 }
@@ -758,57 +900,70 @@ div.footer-icon:hover {background-color: #293035;}
     .container {
         max-width: 1140px;
     }
+
     .col-xl-1 {
         flex: 0 0 8.33%;
         max-width: 8.33%;
     }
+
     .col-xl-2 {
         flex: 0 0 16.667;
         max-width: 16.667%;
     }
+
     .col-xl-3 {
         flex: 0 0 25%;
         max-width: 25%;
     }
+
     .col-xl-4 {
         flex: 0 0 33.33%;
         max-width: 33.33%;
     }
+
     .col-xl-5 {
         flex: 0 0 41.667;
         max-width: 41.667%;
     }
+
     .col-xl-6 {
         flex: 0 0 50%;
         max-width: 50%;
     }
+
     .col-xl-7 {
         flex: 0 0 58.33%;
         max-width: 58.33%;
     }
+
     .col-xl-8 {
         flex: 0 0 66.667%;
         max-width: 66.667%;
     }
+
     .col-xl-9 {
         flex: 0 0 75%;
         max-width: 75%;
     }
+
     .col-xl-10 {
         flex: 0 0 83.33%;
         max-width: 83.33%;
     }
+
     .col-xl-11 {
         flex: 0 0 91.667%;
         max-width: 91.667%;
     }
+
     .col-xl-12 {
         flex: 0 0 100%;
         max-width: 100%;
     }
+
     .features-align {
         flex-direction: row;
-        justify-content: center;    
+        justify-content: center;
         align-items: center;
     }
 }
