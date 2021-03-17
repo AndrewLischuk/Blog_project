@@ -68,6 +68,74 @@
         flex: 0 0 100%;
         max-width: 100%;
     }
+    .nav-mobile-menu {
+        width: 15px;
+        height: 15px;
+        position: relative;
+    }
+    .nav-mobile-menu span {
+        height: 1px;
+        background-color: white;
+        position: absolute;
+        left: 0;
+        right: 0;
+        transition: .25s ease-in-out;
+    }
+    .nav-mobile-menu span:nth-child(1) {
+        top: 3px;
+    }
+    .nav-mobile-menu span:nth-child(2) {
+        top: 7px;
+    }
+    .nav-mobile-menu span:nth-child(3) {
+        bottom: 3px;
+    }
+    .nav-mobile-menu.active-menu span:nth-child(1) {
+        top: 50%;
+        transform: rotate(45deg);
+    }
+    .nav-mobile-menu.active-menu span:nth-child(2) {
+        top: 50%;
+        transform: rotate(-45deg);
+    }
+    .nav-mobile-menu.active-menu span:nth-child(3) {
+        top: 50%;
+        transform: scale(0)
+    }
+    .navigation {
+        transform: translateX(150%);
+        position: fixed;
+        right: 0;
+        top: 0;
+        /* bottom: 0; */
+        min-width: 280px;
+        width: 280px;
+        /* transition: 500ms ease-in-out; */
+    }
+    .hidden-menu {
+        opacity: 0;
+        visibility: hidden;
+    }
+    .navigation.active-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+        top: 30px;
+        background-color: #1d2026;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .active-menu a {
+        margin: 10px 0 !important;
+        background-color: #252930;
+        height: min-content;
+    }
+    .align-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 /************ COMMON ************/
@@ -89,7 +157,7 @@ body {
     margin-right: -15px;
 }
 
-.align-header, .btn-close {
+.btn-close {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -704,25 +772,25 @@ div.footer-icon:hover {
 }
 
 .show {
-    display: flex;
-    justify-content: right;
-    
+    display: flex;    
 }
 .hide {
     display: none;
 }
-.show .container {
-    align-self: flex-end;
+.modal-block-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.modal-block {
-    margin-top: auto;
-    margin-left: auto;
-    margin-bottom: 95px;
+
+.modal-block {    
     min-height: 415px;
     border: 1px solid gray;
     background-color: white;
     display: flex;
     flex-direction: column;
+    justify-self: center;
+    margin: 0;
 }
 
 .modal-title, .modal textarea {
@@ -896,14 +964,21 @@ div.footer-icon:hover {
     .copyright {
         text-align: left;
     }
-    /* .modal-block {
-        margin-left: auto;
-    } */
+    
     .modal-align {
         display: flex;
         flex-direction: row;
         justify-content: space-between;        
     }
+    div.nav-mobile-menu-none {
+        display: none;
+    }
+    .align-header, .btn-close {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    } 
 }
 
 /************ LAPTOP LG ************/
